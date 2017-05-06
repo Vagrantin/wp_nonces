@@ -1,20 +1,61 @@
 <?php 
 get_header();
 
-$bar = new mdu_myveryfirstclass;
-$nonceobj = new mdu_class_create_nonce;
+$bar            = new mdu_myveryfirstclass;
+$createNonceObj = new mdu_class_create_nonce;
+$nonceUrlObj    = new mdu_class_nonce_url;
+$nonceTickObj   = new mdu_class_nonce_tick;
+$nonceFieldObj  = new mdu_class_nonce_field;
+$nonceAysObj    = new mdu_class_nonce_ays;
+
+$nonceName   = 'mdu_nonce';
+$nonceUrl    = 'admin_url';
+$doSomeThing = "i'm doing something";
+$logOut = 'log out';
 
 echo the_title();
 echo "<br/>";
-$bar->hello_world(); 
-$nonceresult = $nonceobj -> mdu_wp_create_nonce('mdu_nonce');
+
+# my first test calling an object
+echo "# my first test calling an object";
 echo "<pre>";
-echo "<br/>";
-print_r ($nonceobj);
-echo "<br/>";
-print_r ($nonceresult);
+print_r ($bar->hello_world());
 echo "</pre>";
 
+# Calling the create nonce
+echo "# Calling the create nonce";
+$createNonceResult = $createNonceObj -> mdu_wp_create_nonce($nonceName);
+echo "<pre>";
+print_r ($createNonceResult);
+echo "</pre>";
+
+# Calling the nonce_url
+echo "# Calling the nonce_url";
+$nonceUrl = $nonceUrlObj -> mdu_wp_nonce_url($nonceUrl, $doSomeThing, $nonceName);
+echo "<pre>";
+print_r ($nonceUrl);
+echo "</pre>";
+
+# Calling the nonce_tick
+echo "# Calling the nonce_tick";
+$nonceTick = $nonceTickObj -> mdu_wp_nonce_tick();
+echo "<pre>";
+print_r ($nonceTick);
+echo "</pre>";
+
+# Calling the nonce_field
+echo "# Calling the nonce_field";
+echo "<pre>";
+# the retrun value is an hidden input !!
+$nonceField = $nonceFieldObj -> mdu_wp_nonce_field($doSomeThing, $nonceName);
+echo "</pre>";
+
+# Calling the nonce_ays
+echo "# Calling the nonce_ays";
+$nonceAys = $nonceAysObj -> mdu_wp_nonce_ays($logOut);
+echo "<pre>";
+print_r ($nonceAys);
+echo "</pre>";
 
 get_footer();
 ?>
