@@ -17,7 +17,14 @@ class mdu_myveryfirstclass {
 		echo 'Hello my new World !';
 	}
 }
-
+//Creates a cryptographic token tied to a specific action, user, user session, and window of time.
+/*
+ * TEST
+ * Trigger a create nonce and verify it.
+ * case1 nonce OK
+ * case2 nonce NOK
+ *
+ * */
 class mdu_class_create_nonce {
 	
 	function mdu_wp_create_nonce($action = -1) {
@@ -35,6 +42,14 @@ class mdu_class_create_nonce {
         }
 }
 
+//Retrieve URL with nonce added to URL query.
+/*
+ * TEST
+ * print nonce_url and verify it.
+ * case1 nonce OK
+ * case2 nonce NOK
+ *
+ * */
 class mdu_class_nonce_url {
 
         function mdu_wp_nonce_url( $actionurl, $action = -1, $name = '_wpnonce' ) {
@@ -43,6 +58,12 @@ class mdu_class_nonce_url {
         }
 }
 
+//Get the time-dependent variable for nonce creation.
+/*
+ * TEST
+ * print nonce_tick and verify it.
+ *
+ * */
 class mdu_class_nonce_tick {
         
         function mdu_wp_nonce_tick() {
@@ -59,6 +80,14 @@ class mdu_class_nonce_tick {
         }
 }
 
+//Retrieve or display nonce hidden field for forms.
+/*
+ * TEST
+ * print nonce_field and verify nonce.
+ * case1 nonce OK
+ * case2 nonce NOK
+ *
+ * */
 class mdu_class_nonce_field {
 
         function mdu_wp_nonce_field( $action = -1, $name = "_wpnonce", $referer = true , $echo = true ) {
@@ -75,6 +104,14 @@ class mdu_class_nonce_field {
         }
 }
 
+//Display “Are You Sure” message to confirm the action being taken.
+/*
+ * TEST
+ * trigger nonce_ays and verify it.
+ * case1 logout
+ *       Is logout performed ?
+ *
+ * */
 class mdu_class_nonce_ays {
 
         function mdu_wp_nonce_ays( $action ) {

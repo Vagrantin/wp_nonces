@@ -40,7 +40,19 @@ echo "</pre>";
 echo "# Calling the nonce_tick";
 $nonceTick = $nonceTickObj -> mdu_wp_nonce_tick();
 echo "<pre>";
+echo "In Seconds";
+echo "<br/>";
 print_r ($nonceTick);
+echo "<br/>";
+echo "In Minutes";
+echo "<br/>";
+$nonceTickMin = $nonceTick / 60;
+print_r ($nonceTickMin);
+echo "<br/>";
+echo "In Hours";
+echo "<br/>";
+$nonceTickHour = $nonceTickMin / 60;
+print_r ($nonceTickHour);
 echo "</pre>";
 
 # Calling the nonce_field
