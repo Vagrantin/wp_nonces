@@ -1,5 +1,17 @@
 {
+  "name": "vagrantin/wp-nonce",
+  "description": "Playing and tesing Wordpress nonces with phpunit tests",
+  "keywords": ["wordpress", "test", "phpunit"],
+  "type": "library",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Vagrantin",
+      "homepage": "http://ll.ducorporation.com"
+    }
+  ],
     "require": {
+	    "php": ">=7.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.6",
