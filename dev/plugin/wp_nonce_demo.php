@@ -14,7 +14,7 @@
 class mdu_myveryfirstclass {
 
 	function hello_world() {
-		echo 'Hello my new World !';
+		return 'Hello my new World !';
 	}
 }
 //Creates a cryptographic token tied to a specific action, user, user session, and window of time.
@@ -90,7 +90,7 @@ class mdu_class_nonce_tick {
  * */
 class mdu_class_nonce_field {
 
-        function mdu_wp_nonce_field( $action = -1, $name = "_wpnonce", $referer = true , $echo = true ) {
+        function mdu_wp_nonce_field( $action = -1, $name = "_wpnonce", $referer = true , $echo = false ) {
             $name = esc_attr( $name );
             $nonce_field = '<input type="hidden" id="' . $name . '" name="' . $name . '" value="' . wp_create_nonce( $action ) . '" />';
          
@@ -141,6 +141,15 @@ class mdu_class_nonce_ays {
          
             wp_die( $html, __( 'WordPress Failure Notice' ), 403 );
         }
+}
+
+function my_did_action($tag) {
+    global $wp_actions;
+ 
+    if ( ! isset( $wp_actions[ $tag ] ) )
+        return 0;
+ 
+    return $wp_actions[$tag];
 }
 
 ?>

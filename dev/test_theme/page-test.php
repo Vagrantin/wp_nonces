@@ -1,6 +1,7 @@
 <?php 
 get_header();
 
+$tag = 'wp_verify_nonce_failed';
 $bar            = new mdu_myveryfirstclass;
 $createNonceObj = new mdu_class_create_nonce;
 $nonceUrlObj    = new mdu_class_nonce_url;
@@ -63,11 +64,22 @@ $nonceField = $nonceFieldObj -> mdu_wp_nonce_field($doSomeThing, $nonceName);
 echo "</pre>";
 
 # Calling the nonce_ays
-echo "# Calling the nonce_ays";
-$nonceAys = $nonceAysObj -> mdu_wp_nonce_ays($logOut);
+#echo "# Calling the nonce_ays";
+#$nonceAys = $nonceAysObj -> mdu_wp_nonce_ays($logOut);
+#echo "<pre>";
+#print_r ($nonceAys);
+#echo "</pre>";
+
+# Calling the did_action function
+echo "# Calling the did_action function";
 echo "<pre>";
-print_r ($nonceAys);
+print_r ($tag);
+echo "<br/>";
+print_r (my_did_action($tag));
+echo "<br/>";
+print_r ($wp_actions);
 echo "</pre>";
+
 
 get_footer();
 ?>

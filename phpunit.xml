@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true"
+         bootstrap="vendor/autoload.php"
+	 convertNoticesToExceptions="True"
+	 convertWarningsToExceptions="True"
+	 convertErrorsToExceptions="True"
+	 processIsolation="false"
+	 stopOnFailure="true"
+	 syntaxCheck="false"
+>
+    <testsuites>
+        <testsuite name="wp_nonces Test Suite">
+		<directory>Test/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
