@@ -9,10 +9,5 @@
       "name": "Vagrantin",
       "homepage": "http://ll.ducorporation.com"
     }
-  ],
-  "autoload": {
-     "classmap": [
-	  "src"
-	]
-    }
+  ]
 }
