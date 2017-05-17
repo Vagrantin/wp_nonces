@@ -30,6 +30,6 @@ For this purpose I took the party to us WordPress Dev environement to perform th
 2. Use wp-tests-config-sample.php to create a wp-tests-config.php file
 
 
-** Run the Tests**
+### Run the Tests ###
 
 * run `phpunit`
