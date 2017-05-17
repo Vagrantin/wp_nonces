@@ -10,13 +10,8 @@
       "homepage": "http://ll.ducorporation.com"
     }
   ],
-    "require": {
-        "cyruscollier/wordpress-develop" : "*"
-    },
-    "require-dev": {
-    },
-    "autoload": {
-	"classmap": [
+  "autoload": {
+     "classmap": [
 	  "src"
 	]
     }
