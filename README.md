@@ -12,7 +12,7 @@
 The purpose of this project is to test and validate Wordpress WP-nonces using phpunit test.
 For this purpose I took the party to us WordPress Dev environement to perform those tests.
 
-## **PHPUnit Test**
+## **PHPUnit Test**  
  * Find the PHPUnit Test files in *Test/* folder, it's called `nonceTest.php`
 
 
@@ -23,11 +23,11 @@ For this purpose I took the party to us WordPress Dev environement to perform th
 
 ## SETUP
 
-## Wordpress
+### Wordpress
 * Because the test are based on Wordpress Dev environement, we need to setup a mysql db
 
-1 - Setup and create a test Database in mysql
-2 - Use wp-tests-config-sample.php to create a wp-tests-config.php file
+1. Setup and create a test Database in mysql
+2. Use wp-tests-config-sample.php to create a wp-tests-config.php file
 
 
 ** Run the Tests**
