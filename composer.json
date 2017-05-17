@@ -11,9 +11,9 @@
     }
   ],
     "require": {
-        "cyruscollier/wordpress-develop" : "*"
     },
     "require-dev": {
+        "cyruscollier/wordpress-develop" : "*"
     },
     "autoload": {
 	"classmap": [
