@@ -7,19 +7,19 @@
 
 
 # wp-nonce testing 
-**using WordPressDev Composer Fork**
+**Using WordPressDev Composer Fork**
 
-The purpose of this project is to test and validate Wordpress WP-nonces using phpunit test.
-For this purpose I took the party to us WordPress Dev environement to perform those tests.
+The purpose of this project is to test and validate Wordpress WP-nonces using phpunit test.  
+For this purpose I took the party to use WordPress Dev environement to perform those tests.
 
 ## SETUP
- Several way to install this package either using git or composer
+ To install this package we are using composer.
 
 ### Composer 
  Once you have installed composer following the procedure available [here](https://getcomposer.org/doc/00-intro.md), you can 
 
-1. Grab the composer.json from my git repository [wp-nonce-package](https://github.com/Vagrantin/wp_nonce_package).
-2. Or create a composer.json file and write down manualy those informations:
+1. Grab the composer.json from my git repository [wp-nonce-package](https://github.com/Vagrantin/wp_nonce_package), with your prefered methode.
+2. Or create a composer.json file in a new project directory and write down manualy those informations:
 
 ```
 {
