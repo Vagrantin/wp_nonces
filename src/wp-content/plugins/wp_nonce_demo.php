@@ -143,13 +143,4 @@ class mdu_class_nonce_ays {
         }
 }
 
-function my_did_action($tag) {
-    global $wp_actions;
- 
-    if ( ! isset( $wp_actions[ $tag ] ) )
-        return 0;
- 
-    return $wp_actions[$tag];
-}
-
 ?>
