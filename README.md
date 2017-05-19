@@ -15,11 +15,8 @@ For this purpose I took the party to us WordPress Dev environement to perform th
 ## SETUP
  Several way to install this package either using git or composer
 
-### Git
- Simply git clone or download this repository, and then go to the Wordpress steps.
-
 ### Composer 
- Using composer, once you have installed composer following the procedure available [here](https://getcomposer.org/doc/00-intro.md), you can 
+ Once you have installed composer following the procedure available [here](https://getcomposer.org/doc/00-intro.md), you can 
 
 1. Grab the composer.json from my git repository [wp-nonce-package](https://github.com/Vagrantin/wp_nonce_package).
 2. Or create a composer.json file and write down manualy those informations:
@@ -36,27 +33,26 @@ For this purpose I took the party to us WordPress Dev environement to perform th
 
 ```
 * Now you can run `composer update` this will trigger the install of the package.
-* Then you **have** to go to the `vendor/vagrantin/wp-nonce/ directory` to perform all the following steps.
+* Then you **have** to go to the `vendor/vagrantin/wp-nonce/` directory to perform all the following steps.
 
 
-**From here we consider that you are in the vendor/vagrantin/wp-nonce/ directory for all the next steps** 
+**From here we consider that you are in the `vendor/vagrantin/wp-nonce/` directory for all the next steps** 
 
 ## PHPUnit Test  
- * The PHPUnit Test files in *Test/* folder, it's called `nonceTest.php`
+ * The PHPUnit test files are in the *Test/* folder, named `nonceTest.php`
 
 
 ## WP-NONCE
 
- * The wp-nonce demo files in the `src/wp-content/plugins/` folder it's called `wp_nonce_demo.php`
-
+ * The wp-nonce demo file is in the `src/wp-content/plugins/` folder named `wp_nonce_demo.php`
 
 
 
 ### Wordpress
- * Because the test are based on Wordpress Dev environement, we need to setup a mysql db
+ * Because those tests are based on Wordpress Dev environement, we have to setup a mysql database, it has to be a new database has those tests are destructive.
 
-1. Setup and create a test Database in mysql
-2. Use wp-tests-config-sample.php to create a wp-tests-config.php file
+1. Setup and create a test Database in mysql.
+2. Use wp-tests-config-sample.php to create a wp-tests-config.php file, so Wordpress Dev can access this newly created database.
 
 
 ### Run the Tests
