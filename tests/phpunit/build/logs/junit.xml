@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="6" assertions="6" errors="0" failures="0" skipped="0" time="0.028305">
-    <testsuite name="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/firstTest.php" tests="6" assertions="6" errors="0" failures="0" skipped="0" time="0.028305">
-      <testcase name="testmdu_myveryfirstclassReturnHelloMyNewWorld" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/firstTest.php" line="13" assertions="1" time="0.004961"/>
-      <testcase name="testcreatenonce" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/firstTest.php" line="30" assertions="1" time="0.008786"/>
-      <testcase name="testcreatenonceurl" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/firstTest.php" line="44" assertions="1" time="0.003915"/>
-      <testcase name="testgetnoncetick" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/firstTest.php" line="59" assertions="1" time="0.003336"/>
-      <testcase name="testgetnoncefield" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/firstTest.php" line="73" assertions="1" time="0.003596"/>
-      <testcase name="testtriggernonceays" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/firstTest.php" line="82" assertions="1" time="0.003711"/>
+  <testsuite name="" tests="6" assertions="6" errors="0" failures="0" skipped="0" time="0.035675">
+    <testsuite name="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/nonceTest.php" tests="6" assertions="6" errors="0" failures="0" skipped="0" time="0.035675">
+      <testcase name="testmdu_myveryfirstclassReturnHelloMyNewWorld" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/nonceTest.php" line="13" assertions="1" time="0.005477"/>
+      <testcase name="testcreatenonce" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/nonceTest.php" line="30" assertions="1" time="0.013869"/>
+      <testcase name="testcreatenonceurl" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/nonceTest.php" line="44" assertions="1" time="0.004454"/>
+      <testcase name="testgetnoncetick" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/nonceTest.php" line="59" assertions="1" time="0.003753"/>
+      <testcase name="testgetnoncefield" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/nonceTest.php" line="73" assertions="1" time="0.004070"/>
+      <testcase name="testtriggernonceays" class="FirstTest" classname="FirstTest" file="/home/matth/Documents/dev/wp_nonces/Test/nonceTest.php" line="82" assertions="1" time="0.004052"/>
     </testsuite>
   </testsuite>
 </testsuites>
