@@ -12,15 +12,6 @@
 The purpose of this project is to test and validate Wordpress WP-nonces using phpunit test.
 For this purpose I took the party to us WordPress Dev environement to perform those tests.
 
-## **PHPUnit Test**  
- * Find the PHPUnit Test files in *Test/* folder, it's called `nonceTest.php`
-
-
-## WP-NONCE
-
-* Find the wp-nonce demo files in the `src/wp-content/plugins/` folder it's called `wp_nonce_demo.php`
-
-
 ## SETUP
  Several way to install this package either using git or composer
 
@@ -44,9 +35,25 @@ For this purpose I took the party to us WordPress Dev environement to perform th
 }
 
 ```
+* Now you can run `composer update` this will trigger the install of the package.
+* Then you **have** to go to the `vendor/vagrantin/wp-nonce/ directory` to perform all the following steps.
+
+
+**From here we consider that you are in the vendor/vagrantin/wp-nonce/ directory for all the next steps** 
+
+## PHPUnit Test  
+ * The PHPUnit Test files in *Test/* folder, it's called `nonceTest.php`
+
+
+## WP-NONCE
+
+ * The wp-nonce demo files in the `src/wp-content/plugins/` folder it's called `wp_nonce_demo.php`
+
+
+
 
 ### Wordpress
-* Because the test are based on Wordpress Dev environement, we need to setup a mysql db
+ * Because the test are based on Wordpress Dev environement, we need to setup a mysql db
 
 1. Setup and create a test Database in mysql
 2. Use wp-tests-config-sample.php to create a wp-tests-config.php file
