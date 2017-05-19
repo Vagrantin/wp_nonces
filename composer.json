@@ -3,22 +3,11 @@
   "description": "Playing and testing Wordpress nonces with phpunit tests",
   "keywords": ["wordpress", "test", "phpunit"],
   "type": "library",
-  "license": "GPL-2.0+",
+  "license": "GPLv2.0+",
   "authors": [
     {
       "name": "Vagrantin",
       "homepage": "http://ll.ducorporation.com"
     }
-  ],
-    "require": {
-	"php": "^7.0"
-    },
-    "require-dev": {
-        "cyruscollier/wordpress-develop" : "*"
-    },
-    "autoload": {
-	"classmap": [
-	  "src"
-	]
-    }
+  ]
 }
