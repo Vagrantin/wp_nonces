@@ -1,6 +1,7 @@
 composer.phar
 *.swp
 /vendor/
+/dev
 composer.lock
 wp-tests-config.php
 
